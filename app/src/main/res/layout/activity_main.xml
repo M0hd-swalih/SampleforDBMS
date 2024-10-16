@@ -1,29 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn1"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Welcome"
+        android:paddingStart="97dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:id="@+id/txtWelcome"
+        android:paddingTop="40dp"
+        android:textColor="#3C2A21"/>
+
 
     <TextView
-        android:id="@+id/text2"
-        android:layout_width="14dp"
-        android:layout_height="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="INTERNS"
+        android:textColor="#1A120B"
+        android:textSize="30dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/signin"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Username"
+        android:textColorHint="@color/black"
+        android:textColor="#243642"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawablePadding="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawablePadding="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/pplImg"
+        android:layout_width="436dp"
+        android:layout_height="566dp"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/pikaso_edit"
+        />
+
+    <Button
+        android:id="@+id/btnLoign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forget"
+        android:layout_alignRight="@id/forget"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:textColor="#EAD8B1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:textColor="#243642"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Forget Password?" />
+
+
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="227dp"
+        android:layout_marginBottom="58dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Need an Account? Sign up"
+        android:textColor="#3C2A21"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
