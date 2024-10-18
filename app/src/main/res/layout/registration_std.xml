@@ -70,19 +70,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="40dp"/>
 
-    <Button
-        android:layout_width="105dp"
-        android:text="Register"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextTextEmailAddress"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:textColor="#EAD8B1"
-        android:backgroundTint="@color/design_default_color_on_secondary"
-        android:layout_centerHorizontal="true"
-        />
-
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
@@ -96,5 +83,38 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="40dp"/>
 
+    <EditText
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:hint="DOB"
+        android:id="@+id/edtTxtDOB"
+        android:inputType="date"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTxtPhNum"
+        android:inputType="number"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:hint="Phone Number"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:layout_width="105dp"
+        android:text="Register"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtDOB"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#EAD8B1"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>
