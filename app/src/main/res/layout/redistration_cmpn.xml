@@ -18,9 +18,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Students"
+        android:text="Company"
         android:fontFamily="cursive"
-        android:id="@+id/txtStudents"
+        android:id="@+id/txtCompany"
         android:layout_below="@+id/txtReg"
         android:layout_centerHorizontal="true"
         />
@@ -29,9 +29,9 @@
         android:layout_width="match_parent"
         android:layout_marginRight="40dp"
         android:layout_height="wrap_content"
-        android:hint="First Name"
+        android:hint="Company Name"
         android:layout_marginTop="35dp"
-        android:id="@+id/edtTxtFirstName"
+        android:id="@+id/edtTxtCmpnName"
         android:layout_below="@+id/txtReg"
         android:layout_marginLeft="40dp"
         />
@@ -40,10 +40,12 @@
         android:layout_width="match_parent"
         android:layout_marginRight="40dp"
         android:layout_height="wrap_content"
-        android:hint="Last Name"
+        android:hint="Company Mail"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/baseline_email_24"
         android:layout_marginTop="15dp"
         android:id="@+id/edtTxtLastName"
-        android:layout_below="@+id/edtTxtFirstName"
+        android:layout_below="@+id/edtTxtCmpnName"
         android:layout_marginLeft="40dp"/>
 
     <EditText
@@ -74,7 +76,7 @@
         android:layout_width="105dp"
         android:text="Register"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_below="@+id/editTextTextPassword"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
@@ -82,19 +84,6 @@
         android:backgroundTint="@color/design_default_color_on_secondary"
         android:layout_centerHorizontal="true"
         />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginRight="40dp"
-        android:inputType="textEmailAddress"
-        android:layout_below="@+id/editTextTextPassword"
-        android:drawableLeft="@drawable/baseline_email_24"
-        android:hint="Email ID"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"/>
 
 
 </RelativeLayout>
