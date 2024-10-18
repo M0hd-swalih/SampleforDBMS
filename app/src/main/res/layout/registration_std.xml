@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtReg"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students"
+        android:fontFamily="cursive"
+        android:id="@+id/txtStudents"
+        android:layout_below="@+id/txtReg"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_marginTop="35dp"
+        android:id="@+id/edtTxtFirstName"
+        android:layout_below="@+id/txtReg"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtTxtLastName"
+        android:layout_below="@+id/edtTxtFirstName"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/edtTxtUser"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/edtTxtLastName"
+        android:id="@+id/edtTxtUser"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:layout_width="105dp"
+        android:text="Register"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#EAD8B1"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
